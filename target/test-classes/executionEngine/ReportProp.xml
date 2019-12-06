@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+    <theme>standard</theme>
+    <encoding>UTF-8</encoding>
+    <protocol>http</protocol>
+    <documentTitle>Project Name</documentTitle>
+    <reportName>Automation Report</reportName>
+    <!-- <reportHeadline>QA Release</reportHeadline> -->
+    <theme>dark</theme>
+    <dateFormat>MM-dd-yyyy</dateFormat>
+    <timeFormat>HH:mm:ss</timeFormat>
+  </configuration>
+</extentreports>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <zip basedir="C:\Users\saramachandra\Documents\workspace\SalesForce\POMtoZip\.." excludes="target/**" destfile="C:\Users\saramachandra\Documents\workspace\SalesForce\POMtoZip\..\CORP.AutoWebsites.2.0.4.zip"/>
+</target>
+</project>

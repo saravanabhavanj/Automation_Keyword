@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests" verbose="1" parallel="classes" thread-count="1">
+	<test name="admin" junit="false" preserve-order="true"> 
+	    <!-- Default will run in order -->
+		<classes>
+			<class name="executionEngine.DriverScript">
+				<methods>
+        			<include name="mains" />
+      			</methods>
+      		</class>
+		</classes>
+	</test>
+</suite>

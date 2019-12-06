@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SalesForce</groupId>
+	<artifactId>SalesForce</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<configuration>
+					<target>
+						<zip destfile="${project.basedir}\..\CORP.AutoWebsites.2.0.4.zip"
+							basedir="${project.basedir}\.." excludes="target/**" />
+					</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

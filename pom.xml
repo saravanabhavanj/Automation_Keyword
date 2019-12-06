@@ -1,0 +1,179 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Automation</groupId>
+	<artifactId>Automation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.4.0</version>
+				<exclusions>
+        			<exclusion>
+            			<groupId>org.seleniumhq.selenium</groupId>
+            			<artifactId>selenium-safari-driver</artifactId>
+        			</exclusion>
+        		</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-safari-driver</artifactId>
+			<version>2.48.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
+		<dependency>
+    		<groupId>org.reflections</groupId>
+    		<artifactId>reflections</artifactId>
+    		<version>0.9.10</version>
+		</dependency>
+		
+		<!-- For mobile automation -->
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+    		<groupId>io.appium</groupId>
+    		<artifactId>java-client</artifactId>
+    		<version>5.0.4</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+    		<groupId>javax.mail</groupId>
+    		<artifactId>mail</artifactId>
+    		<version>1.4.7</version>
+		</dependency>
+		
+		<!-- To compare two screen shots -->
+		<!-- https://mvnrepository.com/artifact/com.testautomationguru.ocular/ocular -->
+		<dependency>
+    		<groupId>com.testautomationguru.ocular</groupId>
+    		<artifactId>ocular</artifactId>
+    		<version>1.0.0.Alpha</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-core -->
+		<dependency>
+    		<groupId>com.sikulix</groupId>
+    		<artifactId>sikulixapi</artifactId>
+    		<version>1.1.0</version>
+		</dependency>
+		
+		<dependency>
+  			<groupId>org.testng</groupId>
+  			<artifactId>testng</artifactId>
+  			<version>6.8</version>
+  			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+	
+	<profiles>
+		<profile>
+			<id>SF</id>
+			<properties>
+				<name>env</name>
+				<value>SF</value>
+			</properties>
+			
+			<build>
+				<resources>
+					<resource>
+						<directory>src/test/resources/Config/SF</directory>
+						 <filtering>true</filtering>
+				        <includes>
+				        	<include>**/*.properties</include>
+           				</includes>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+		
+		<profile>
+			<id>Web</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/test/resources/Config/Web</directory>
+						 <filtering>true</filtering>
+						 <includes>
+				        	<include>**/*.properties</include>
+           				</includes>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.7.0</version>
+					<configuration>
+						<fork>true</fork>
+						<forkCount>2</forkCount>
+						<reuseForks>false</reuseForks>
+						<executable>C:\Program Files\Java\jdk1.8.0_144\bin\javac.exe</executable>
+					</configuration>
+			</plugin>
+			
+			<!--  -Denv=Web integration-test -Dexec.mainClass="executionEngine.DriverScript" -Dexec.classpathScope="test" -->
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				 <executions>
+					<execution>
+						<id>test-execution</id>
+						<phase>test</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions> 
+				<configuration>
+					<mainClass>executionEngine.DriverScript</mainClass>
+					<cleanupDaemonThreads>false</cleanupDaemonThreads>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

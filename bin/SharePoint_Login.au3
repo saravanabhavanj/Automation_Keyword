@@ -1,0 +1,7 @@
+WinWaitActive("Windows Security")
+Send($CmdLine[1])
+Sleep(1000)
+Send("{TAB}")
+Send($CmdLine[2])
+Sleep(1000)
+Send("{ENTER}")

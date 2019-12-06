@@ -1,0 +1,404 @@
+###################### Unification Gallagher Global ######################
+
+Hero_CTA_xpath=//a[contains(@class,'ajg-btn ajg-btn-md ajg-btn-secondary ajg-btn-block ajg-trigger-hero-cta')]
+
+# Meta Navigation Component
+Prd_region_metanav_xpath = //nav[@class='ajg-region-dropdown-btn']
+prd_region_chev_xpath = //nav[@class='ajg-region-dropdown-btn']//span
+Prd_regionitem_aus_xpath = //div[contains(@class,'ajg-region-dropdown-content')]/a[1][text()='AUS']
+Prd_regionitem_ca_xpath = //div[contains(@class,'ajg-region-dropdown-content')]/a[2][text()='CA']
+Prd_regionitem_uk_xpath = //div[contains(@class,'ajg-region-dropdown-content')]/a[3][text()='UK']
+Prd_regionitem_us_xpath = //div[contains(@class,'ajg-region-dropdown-content')]/a[4][text()='US']
+Prd_metanav_car_xpath = //nav[@class='ajg-secondary-nav']//a[text()='Careers']
+Prd_metanav_cont_xpath = //nav[@class='ajg-secondary-nav']//a[text()='Contact Us']
+Prd_logo_xpath = //img[@alt='Gallagher Logo']
+Prd_CareerHeading_lbl_xpath=//h1[contains(text(),'Careers')]
+Prd_ContactUsHeading_lbl_xpath=//h1[contains(text(),'Contact Us')]
+Prd_mainnav_autodemo_lnk_xpath = //nav[@class='ajg-primary-nav']//a[text()='AutomationDemo']
+
+# Primary Navigation
+MainNav_lnk_xpath=//nav[@id='ajg-mm-menu']//*[contains(@class,'navlevel-1')][contains(text(),"ReplaceString")]
+SecondaryNav_lnk_xpath=//div[contains(@class,'ajg-secondary-nav')]//*[contains(@class,'navlevel-2')][contains(text(),"ReplaceString")]
+ThirdNav_lnk_xpath=//div[@class='ajg-tertiary-nav']//*[contains(@class,'navlevel-3')][contains(text(),"ReplaceString")]
+FourthNav_lnk_xpath=//div[@class='ajg-quaternary-nav']//*[contains(@class,'navlevel-4')][contains(text(),"ReplaceString")]
+HeroHeader_lnk_xpath=//div[@class='ajg-hero-text']/h1[contains(text(),"ReplaceString")]
+
+# Hero Component
+Prd_heroheading_lbl_xpath = //div[contains(@class,'ajg-hero-text')]//h1
+Prd_herodesc_lbl_xpath = //div[contains(@class,'ajg-hero-text')]//h2
+Prd_herodescBold_lbl_xpath = //div[contains(@class,'ajg-hero-text')]//h2//b
+Prd_herodesc_img_xpath = //div[contains(@class,'hero-wrapper')]//img
+Prd_heroCTAdesc_lbl_xpath = //div[contains(@class,'ajg-hero-cta-text')]//h4
+Prd_heroCTA_btn_xpath = //div[contains(@class,'ajg-hero-cta-btn')]/a
+
+# Product Subheading Component
+Prd_subheading_left_lbl_xpath = //section[2]/div/div[1]/h3
+Prd_subheading_right_lbl_xpath = //section[2]/div/div[2]
+
+# Share component
+Prd_sharebuttons_btn_xpath = //div[@class='ajg-share-buttons']
+Prd_share_lbl_xpath = //span[@class='ajg-share-buttons-label']
+Prd_shareViaEmail_lnk_xpath = (//div[@class='ajg-share-buttons']//a)[1]
+Prd_shareViaTwitter_lnk_xpath = (//div[@class='ajg-share-buttons']//a)[2]
+Prd_shareViaLinkedIn_lnk_xpath = (//div[@class='ajg-share-buttons']//a)[3]
+
+# Highlights component
+Prd_HighlightsHeading_lbl_xpath = //div[contains(@class,'ajg-summary-highlights-heading')]//h2
+Prd_HighlightsSummary_lbl_xpath = //div[contains(@class,'ajg-summary-highlights-heading')]//h2/span
+
+Prd_HighlightsText1_lbl_xpath = (//div[contains(@class,'ajg-summary-highlights-list')]//span)[1]
+Prd_HighlightsText2_lbl_xpath = (//div[contains(@class,'ajg-summary-highlights-list')]//span)[2]
+Prd_HighlightsText3_lbl_xpath = (//div[contains(@class,'ajg-summary-highlights-list')]//span)[3]
+Prd_HighlightsText4_lbl_xpath = (//div[contains(@class,'ajg-summary-highlights-list')]//span)[4]
+
+Prd_Highlights_Bullet1_xpath = (//div[contains(@class,'ajg-summary-highlights-list')]//i)[1]
+Prd_Highlights_Bullet2_xpath = (//div[contains(@class,'ajg-summary-highlights-list')]//i)[2]
+Prd_Highlights_Bullet3_xpath = (//div[contains(@class,'ajg-summary-highlights-list')]//i)[3]
+Prd_Highlights_Bullet4_xpath = (//div[contains(@class,'ajg-summary-highlights-list')]//i)[4]
+
+# Page quote component
+Prd_QuoteIcon_img_xpath = //span[@class='ajg-quote-icon']
+Prd_QuoteHeading_lbl_xpath = //div[@class='ajg-quote-heading']
+Prd_QuoteAuthor_lbl_xpath = //div[@class='ajg-quote-author']
+
+# Link list component
+Prd_LinkListItem_lbl_xpath = //div[contains(@class,'ajg-related-link-item')]/h5
+Prd_LinkListItemLink1_lnk_xpath = (//div[contains(@class,'ajg-related-link-item')])[1]//a
+Prd_LinkListItemLink2_lnk_xpath = (//div[contains(@class,'ajg-related-link-item')])[2]//a
+Prd_LinkListItemLink3_lnk_xpath = (//div[contains(@class,'ajg-related-link-item')])[3]//a
+
+# Content Accordion component
+Prd_AccordionItem_lbl_xpath = //div[@class='ajg-accordion']
+
+Prd_AccordionItem1_lbl_xpath = //div[@class='ajg-accordion']/div[1]
+Prd_AI1_img_xpath = //div[@class='ajg-accordion']/div[1]//span
+Prd_AIHeading1_lbl_xpath = //div[@class='ajg-accordion']/div[1]//h4
+Prd_AISection1_lbl_xpath = (//div[@class='ajg-accordion-section'])[1]
+
+Prd_AccordionItem2_lbl_xpath = //div[@class='ajg-accordion']/div[2]
+Prd_AI2_img_xpath = //div[@class='ajg-accordion']/div[2]//span
+Prd_AIHeading2_lbl_xpath = //div[@class='ajg-accordion']/div[2]//h4
+Prd_AISection2_lbl_xpath = (//div[@class='ajg-accordion-section'])[2]
+
+Prd_AccordionItem3_lbl_xpath = //div[@class='ajg-accordion']/div[3]
+Prd_AI3_img_xpath = //div[@class='ajg-accordion']/div[3]//span
+Prd_AIHeading3_lbl_xpath = //div[@class='ajg-accordion']/div[3]//h4
+Prd_AISection3_lbl_xpath = (//div[@class='ajg-accordion-section'])[3]
+
+Prd_AccordionItem4_lbl_xpath = //div[@class='ajg-accordion']/div[4]
+Prd_AI4_img_xpath = //div[@class='ajg-accordion']/div[4]//span
+Prd_AIHeading4_lbl_xpath = //div[@class='ajg-accordion']/div[4]//h4
+Prd_AISection4_lbl_xpath = (//div[@class='ajg-accordion-section'])[4]
+
+# General Content(4 Image) component
+Prd_GCOneCol_img_xpath = //div[contains(@class,'general-content')]//div[contains(@class,'image')]//div[@class='row']//img
+Prd_GCImgAttribution_lbl_xpath = //div[contains(@class,'general-content')]//div[contains(@class,'image')]//div[@class='row']//div[contains(@class,'attribution')]
+Prd_GCImgAttribution1_txt_xpath = //div[contains(@class,'general-content')]//div[contains(@class,'image')]//div[@class='row']//div[contains(@class,'attribution')]/h6
+Prd_GCImgAttribution2_txt_xpath = //div[contains(@class,'general-content')]//div[contains(@class,'image')]//div[@class='row']//div[contains(@class,'attribution')]/h5
+
+Prd_GCTwoCol_lbl_xpath = //div[contains(@class,'ajg-two-columns')]/div[1]
+Prd_GCTwoCol1_txt_xpath = //div[contains(@class,'ajg-two-columns')]/div[1]
+Prd_GCTwoCol2_img_xpath = //div[contains(@class,'ajg-two-columns')]/div[2]//img
+
+# Navigation bar component
+Prd_NavBar_sec_xpath = //nav[@id='ajg-mm-menu']
+Prd_Nav1_lnk_xpath = //nav[@id='ajg-mm-menu']/ul/li[1]/span
+Prd_Nav2_lnk_xpath = //nav[@id='ajg-mm-menu']/ul/li[2]/span
+Prd_Nav3_lnk_xpath = //nav[@id='ajg-mm-menu']/ul/li[3]/span
+Prd_Nav4_lnk_xpath = //nav[@id='ajg-mm-menu']/ul/li[4]/a
+Prd_Nav5_lnk_xpath = //nav[@id='ajg-mm-menu']/ul/li[5]/a
+
+# Footer FAR Component
+Prd_FooterFAR_img_xpath = //section[contains(@id,'ajg-far-footer')]//img
+Prd_FooterFARCTAdesc_lbl_xpath = //div[@class='ajg-far-footer-cta-text-area']/h5
+Prd_FooterFARCTA_btn_xpath = //a[@class='ajg-far-footer-btn']/span
+Prd_FooterFARCTA_img_xpath = //a[@class='ajg-far-footer-btn']//i
+
+# Brightcove video component
+Prd_BCOneCol_video_xpath = //div[@class='row ajg-general-content']//div[@class='ajg-video-container-inner']/div
+Prd_BCVideoAttribution_xpath = //div[@class='row ajg-general-content']//div[@class='ajg-video-container-inner']/script
+Prd_BCImgAttribution1_txt_xpath = //div[@class='row ajg-general-content']//div[@class='ajg-video-container-inner']/../../..//h6
+Prd_BCImgAttribution2_txt_xpath = //div[@class='row ajg-general-content']//div[@class='ajg-video-container-inner']/../../..//h5
+
+Prd_BCTwoCol_lbl_xpath = //div[@class='ajg-video-container']/ancestor::div[contains(@class,'ajg-two-columns')]/div[1]
+Prd_BCTwoCol1_txt_xpath = //div[@class='ajg-video-container']/ancestor::div[contains(@class,'ajg-two-columns')]/div[1]
+Prd_BCTwoCol2_img_xpath = //div[@class='ajg-video-container']/ancestor::div[contains(@class,'ajg-two-columns')]/div[2]
+
+## Explore Cards
+ExploreCard_section_xpath=//section[@aria-label='Explore Cards']
+FeaturedCards_section_xpath=//div[contains(@class,'cmp-featured-cards')]
+
+### Connect With An Expert Form
+CWAE_HeroHeading_lbl_xpath=//h1[contains(text(),'Connect With an Expert')]
+
+CWAE_Category_drpDwn_xpath=(//select[contains(@class,'category-dropdown')])[ReplaceString]/following-sibling::*[1]/a
+CWAE_Category_txt_xpath=(//select[contains(@class,'category-dropdown')])[ReplaceString]/following-sibling::*[1]//input
+CWAE_ChoosenCategory_lbl_xpath=//li[contains(@class,'active-result')]/em[text()='ReplaceString']
+CWAE_ChoosenTopLevelCategory_lbl_xpath=//li[contains(@class,'group-result')]/em[text()='ReplaceString']
+
+CWAE_ProductOrSrv1_lbl_xpath=(//select[contains(@class,'depdrop product-dropdown')])[ReplaceString]
+
+CWAE_ProductOrSrv_drpDwn_xpath=//select[@data-sc-field-name='productReplaceString']/following-sibling::*[1]/a
+CWAE_ChoosenProductOrSrv_lbl_xpath=//li[contains(@class,'active-result')][text()='ReplaceString']
+CWAE_ProductOrSrv_txt_xpath=//select[@data-sc-field-name='productReplaceString']/following-sibling::input[1]
+
+CWAE_AddProduct_lnk_xpath=//a[@class='add-another-product add-more-link']
+CWAE_Company_txt_xpath=//label[contains(text(),'Company Name')]//following-sibling::*[1]
+CWAE_CompConditionalInput_chkBox_xpath=//label[@class='ajg-checkbox-label']//span[@class='ajg-checkmark']
+
+CWAE_Industry_drpDwn_xpath=//label[contains(text(),'Industry')]//following-sibling::*[1]/select/following-sibling::*[1]/a
+CWAE_Industry_txt_xpath=//label[contains(text(),'Industry')]//following-sibling::*[1]/select/following-sibling::*[1]//input
+CWAE_ChoosenIndustry_lbl_xpath=//li[contains(@class,'active-result')]/em[text()='ReplaceString']
+
+CWAE_NumberofEmp_drpDwn_xpath=//label[contains(text(),'Number of Employees')]//following-sibling::*[1]/select/following-sibling::*[1]/a
+CWAE_ChoosenNumberofEmp_lbl_xpath=//li[contains(@class,'active-result')][text()='ReplaceString']
+
+CWAE_JobDepartment_drpDwn_xpath=//label[contains(text(),'Job Department')]//following-sibling::*[1]/select/following-sibling::*[1]/a
+CWAE_JobDepartment_txt_xpath=//label[contains(text(),'Job Department')]//following-sibling::*[1]/select/following-sibling::*[1]//input
+CWAE_ChoosenJobDepartment_lbl_xpath=//li[contains(@class,'active-result')]/em[text()='ReplaceString']
+
+CWAE_JobTitle_txt_xpath=//label[contains(text(),'Job Title')]//following-sibling::*[1]
+CWAE_FirstName_txt_xpath=//label[contains(text(),'First Name')]//following-sibling::*[1]
+CWAE_LastName_txt_xpath=//label[contains(text(),'Last Name')]//following-sibling::*[1]
+
+CWAE_Country_drpDwn_xpath=//label[contains(text(),'Country')]//following-sibling::*[1]/select/following-sibling::*[1]/a
+CWAE_ChoosenCountry_lbl_xpath=//li[contains(@class,'active-result')][text()='ReplaceString']
+
+CWAE_Postcode_txt_xpath=//label[contains(text(),'Postcode')]//following-sibling::*[1]
+CWAE_EmailAddress_txt_xpath=//label[contains(text(),'Email address')]//following-sibling::*[1]
+CWAE_PhoneNumber_txt_xpath=//label[contains(text(),'Phone number')]//following-sibling::*[1]
+
+CWAE_BestTime_drpDwn_xpath=//label[contains(text(),'Best time')]//following-sibling::*[1]/select/following-sibling::*[1]/a
+CWAE_BestTime_txt_xpath=//label[contains(text(),'Best time')]//following-sibling::*[1]/select/following-sibling::*[1]//input
+CWAE_ChoosenBestTime_lbl_xpath=//li[contains(@class,'active-result')]/em[text()='ReplaceString']
+
+CWAE_PreferredMethod_chkBox_xpath=//input[@value='ReplaceString']/following-sibling::*[1]
+CWAE_AdditionalComments_txt_xpath=//label[contains(text(),'Any additional')]//following-sibling::*[1]
+CWAE_MktPreferences_chkBox_xpath=//input[@type='checkbox'][contains(@value,'ReplaceString')]/following-sibling::*[1]
+CWAE_TermsAndCond_chkBox_xpath=//input[@type='checkbox'][contains(@class,'agree')]/following-sibling::span[1]
+CWAE_Submit_btn_xpath=//input[@value='Submit']
+
+CWAE_SummaryFormHeader_lbl_xpath=//h3[@class='ajg-form-header']
+CWAE_SummarySubHeader1_lbl_xpath=(//h4[@class='ajg-form-sub-header'])[1]
+CWAE_SummarySubHeader2_lbl_xpath=(//h4[@class='ajg-form-sub-header'])[2]
+CWAE_SummaryFieldValue_lbl_xpath=//p[text()='ReplaceString']/following-sibling::p
+CWAE_ErrorValidationSummary_lbl_xpath=//div[@class='validation-summary-body']//ul/li
+
+####### Sitecore component add #######
+## Content Editor Object
+SC_Login_txt_xpath=//*[@id='UserName'] | //*[@id='Username']
+SC_Password_txt_id=Password
+SC_Submit_btn_xpath=//input[@type='submit'] | //button[@value='login']
+SC_Logout_btn_xpath = //a[contains(@class,'logout')]
+SC_CELogout_btn_xpath = //span[contains(@class,'logout')]
+
+SC_ExperienceAnalytics_btn_xpath=//span[@class='sc-launchpad-text'][contains(text(),'Experience Analytics')]
+SC_ExpAn_DateFilter_btn_xpath=//button[@data-sc-id="ExperienceAnalyticsFiltersDateRangeToggleButton"]
+SC_ExpAn_FromDate_txt_xpath=//div[@data-sc-id="ExperienceAnalyticsFiltersDateRangeFilterFromDatePickerRightColumn"]/input
+SC_ExpAn_ToDate_txt_xpath=//div[@data-sc-id="ExperienceAnalyticsFiltersDateRangeFilterToDatePicker"]/input
+SC_ExpAn_HighLightedDate_txt_xpath=//a[@class='ui-state-default ui-state-active']
+SC_ExpAn_FilterSubmit_txt_xpath=//button[@data-sc-id='ExperienceAnalyticsFiltersDateRangeFilterSubmitButton']
+
+SC_ContentEditor_btn_xpath=//span[@class='sc-launchpad-text'][contains(text(),'Content Editor')]
+SC_TreeViewExpand_lbl_xpath=//span[text()='ReplaceString']/../../img
+SC_TreeViewName_lbl_xpath=//a[contains(@id,'Tree_Node')]/span[text()='ReplaceString']/../../a
+SC_TreeViewSubItemExpand_lbl_xpath=//span[text()='ReplaceString1']/../../a/following-sibling::div//span[text()='ReplaceString2']/../../img
+SC_TreeVieSubItemwName_lbl_xpath=//span[text()='ReplaceString1']/../../a/following-sibling::div//span[text()='ReplaceString2']/../../a
+SC_MenuItem_lbl_xpath=//td[contains(@class,'scMenuItemCaption')][text()='ReplaceString']
+SC_SubMenuItem_lbl_xpath=(//td[@class='scMenuItemCaption'][text()='ReplaceString'])[2]
+
+SC_Parent_iFrame_xpath=//body/iframe
+SC_Child_iFrame_id=scContentIframeId0
+SC_Editor_iFrame_id=Editor_contentIframe
+SC_Child_iFrame_Input_xpath=//input[@id='Value']
+SC_Child_iFrame_OK_xpath=//button[@id='OK']
+SC_RTE_body_xpath=/html//body
+SC_RTE_Accept_id=OkButton
+SC_TemplateName_xpath=//input[@id='TemplateName']
+SC_ItemName_xpath=//input[@id='ItemName']
+
+SC_SearchIcon_img_xpath=//a[@id='ContentEditorNavigator']/img[@class='scEditorHeaderNavigatorIcon']
+SC_Searchbox_txt_xpath=//input[@placeholder='Search']
+SC_SearchList_drpdwn_xpath=//a[contains(@id,'Nav_FIELD')][text()='ReplaceString']
+SC_SearchList_Section_drpdwn_xpath=//a[contains(@id,'Nav_Section')][text()='ReplaceString']
+SC_ContentList_drpdwn_xpath=//div[@class="scEditorFieldLabel"][contains(text(),'ReplaceString')]/..//select
+SC_ContentField_txt_xpath=//div[@class="scEditorFieldLabel"][contains(text(),'ReplaceString')]/..//input
+SC_InsertExtLink_lnk_xpath=//div[@class="scEditorFieldLabel"][contains(text(),'ReplaceString')]/..//a[contains(text(),'Insert external link')]
+SC_ExpandNode_lnk_xpath=//ul[@title='ReplaceString']/li/div/img
+SC_SelectItem_lnk_xpath=//ul[@title='ReplaceString']/li//div[@class='nodeNormal']
+SC_PublicationDateNow_lnk_xpath=//div[contains(text(),'Publication')]/..//div[@class="scContentButtons"]/a[text()='Now']
+SC_SyndicatedRegion_chkBox_xpath=//div[@class="scEditorFieldLabel"][contains(text(),'Syndicated')]/..//label[text()='ReplaceString']/preceding-sibling::input[1]
+SC_LinkDesc_lnk_xpath=//input[@id='Text']
+SC_LinkUrl_lnk_xpath=//input[@id='Url']
+SC_ContentShowEditor_lnk_xpath=//div[contains(text(),'Bio')]/following-sibling::div/a[contains(text(),'Show editor')]
+SC_ContentIsPublic_chkBox_xpath=//div[contains(text(),'isPublic')]/preceding-sibling::div/input
+SC_ContentImageClear_lnk_xpath=//div[contains(text(),'Image')]/following-sibling::div/a[contains(text(),'Clear')]
+SC_ContentImagePath_txt_xpath=//div[contains(text(),'Image')]/following-sibling::div/input
+SC_SaveContent_btn_xpath=//img[@class='scRibbonToolbarLargeButtonIcon']
+
+
+## Experience editor object
+# Menu items
+SC_EditRibbon_iFrame_xpath=//iframe[@id='scWebEditRibbon']
+SC_Add_NewComponent_xpath=//div[contains(@title,'Add a new component')]
+SC_SaveChanges_btn_xpath=//div[contains(@title,'Save changes')]/..
+SC_PublishItem_btn_xpath=//div[contains(@title,'Publish the current item')]
+SC_HomeMenu_btn_xpath=//a[@id='PageEditorStrip_ribbon_tab'][contains(text(),'Home')]
+
+# Common component inside frame
+SC_Parent_EE_iFrame_xpath=//body/iframe[@id="jqueryModalDialogsFrame"]
+SC_Child_EE_iFrame_id=scContentIframeId0
+SC_Child2_EE_iFrame_id=scContentIframeId1
+SC_Add_SelectOK_xpath=//button[@id='OK']
+SC_Data_UpdateOK_xpath=//input[@value="OK"]
+SC_Pubish_btn_xpath=//button[@id='NextButton']
+SC_Cancel_btn_xpath=//button[@id='CancelButton']
+
+SC_TreeViewExpand_EE_lbl_xpath=//span[text()='ReplaceString']/../../img
+SC_TreeViewSubItem_EE_lbl_xpath=//span[text()='ReplaceString1']/../../div//span[text()='ReplaceString2']
+SC_TreeViewItem_EE_lbl_xpath=//span[text()='ReplaceString']
+
+# Business Category Page
+SC_CategoryItem1_xpath=(//div[contains(@class,'ajg-category-item')]//h5//span[contains(@id,'fld')])[1]
+SC_CategoryItem2_xpath=(//div[contains(@class,'ajg-category-item')]//h5//span[contains(@id,'fld')])[2]
+SC_CategoryItem3_xpath=(//div[contains(@class,'ajg-category-item')]//h5//span[contains(@id,'fld')])[3]
+
+# Product Category Page
+SC_CardIntroduction_xpath=//div[contains(@class,'ajg-item-card-intro-description')]//span[contains(@id,'fld')]
+SC_CardDesc1_xpath=(//div[contains(@class,'ajg-item-card-description')]//span[contains(@id,'fld')])[1]
+SC_CardDesc2_xpath=(//div[contains(@class,'ajg-item-card-description')]//span[contains(@id,'fld')])[2]
+SC_CardDesc3_xpath=(//div[contains(@class,'ajg-item-card-description')]//span[contains(@id,'fld')])[3]
+
+# Hero
+SC_HeroImage_xpath=//div[@class='ajg-hero-text-cont']
+SC_Edit_ProductPage_xpath=(//span[text()="Product Page"]/../..//a[@title="Edit item"])[2]
+SC_Edit_HeroHeading_xpath=//div[@class="ajg-hero-text"]/h2/span[2]
+SC_HeroShowAncestors_Drpdwn_xpath=(//img[contains(@alt,"Show ancestors")])[2]
+SC_HeroAncestor_xpath=//img[@class="scChromeAncestorIcon"]/following-sibling::span
+SC_HeroEditItem_xpath=(//img[@alt="Edit item"])[2]
+SC_Edit_SiteMapHeading_xpath=(//h3[@class="ajg-sitemap-heading"]/span[2])[1]
+
+# Data Edit Item
+SC_HeroStyleData_xpath=//div[contains(text(),"Hero Style")]/following-sibling::div/select
+SC_HeroImageData_xpath=//div[contains(text(),"Hero Image")]
+SC_HeroImagePathClear_xpath=//div[contains(text(),"Hero Image")]/following-sibling::div[1]/a[text()="Clear"]
+SC_HeroImagePathData_xpath=//div[contains(text(),"Hero Image")]/following-sibling::div[2]/input
+
+SC_Query2_xpath=(//div[contains(text(),"Query")])[2]
+SC_Query2Clear_xpath=(//div[contains(text(),"Query")])[2]/following-sibling::div[1]/a[text()="Clear"]
+SC_Query2Text_xpath=(//div[contains(text(),"Query")])[2]/following-sibling::div[2]/input
+
+SC_Query3_xpath=(//div[contains(text(),"Query")])[3]
+SC_Query3Clear_xpath=(//div[contains(text(),"Query")])[3]/following-sibling::div[1]/a[text()="Clear"]
+SC_Query3Text_xpath=(//div[contains(text(),"Query")])[3]/following-sibling::div[2]/input
+
+# Product Subheading
+SC_SubHeading_Header_xpath=//div[contains(@class,'sub-heading-header')]//span[contains(@class,'scWebEditInput')]
+SC_SubHeading_Content_xpath=//div[contains(@class,'sub-heading-content')]//span[contains(@class,'scWebEditInput')]
+SC_ShareContent_xpath=//*[@class='ajg-share-buttons']/../..//span[contains(@class,'scWebEditInput')]
+
+# Content Block
+SC_Add_InsertContBlock_xpath=//div[@class='scInsertionHandle'][contains(@title,'Content Block') or ('Campaign Body') or ('location-content-block')]//span[text()='Add here']
+SC_Add_Insert2ColumnLeft_xpath=//div[@class='scInsertionHandle'][contains(@title,'col-left')]//span[text()='Add here']
+SC_Add_Insert2ColumnRight_xpath=//div[@class='scInsertionHandle'][contains(@title,'col-right')]//span[text()='Add here']
+SC_Add_InsertColumnMiddle_xpath=//div[@class='scInsertionHandle'][contains(@title,'col-middle')]//span[text()='Add here']
+SC_Add_InsertColumnLeftMiddle_xpath=//div[@class='scInsertionHandle'][contains(@title,'col-left-middle')]//span[text()='Add here']
+SC_Add_Insert2Column_xpath=//div[@class='scInsertionHandle'][contains(@title,'col-2-thirds')]//span[text()='Add here']
+SC_Add_Insert1Column_xpath=//div[@class='scInsertionHandle'][contains(@title,'col-1-third')]//span[text()='Add here']
+SC_Add_InsertOverviewComponent_xpath=//div[@class='scInsertionHandle'][contains(@title,'col-overview-component')]//span[text()='Add here']
+
+SC_Add_SelectContactCardsTab_xpath=//span[text()='Contact Cards']
+SC_Add_SelectContainersTab_xpath=//span[text()='Containers']
+SC_Add_SelectFormsTab_xpath=//span[text()='Forms']
+SC_Add_SelectListsTab_xpath=//span[text()='Lists']
+SC_Add_SelectMediaTab_xpath=//span[text()='Media']
+SC_Add_SelectPageContTab_xpath=//span[text()='Page Content'] | //span[text()='PageContent']
+SC_Add_RegionSelectorTab_xpath=//span[text()='Region Selector']
+
+SC_Add_Select2Column_xpath=//span[text()='2 Column']
+SC_Add_Select3Column_xpath=//span[text()='3 Column']
+SC_Add_Select4Column_xpath=//span[text()='4 Column']
+SC_Add_Select1-2Column_xpath=//span[text()='1-2 Column']
+SC_Add_Select2-1Column_xpath=//span[text()='2-1 Column']
+SC_Add_SelectStdImage_xpath=//span[text()='Standard Image']
+SC_Add_SelectRTE_xpath=//span[text()='Rich Text Area']
+SC_Add_SelectStdVideo_xpath=//span[text()='Standard Video with Caption']
+SC_Add_SelectPersonContactCards_xpath=//span[text()='Person Contact Card']
+SC_Add_SelectContactCards_xpath=//span[text()='Office Contact Card']
+
+SC_Add_SelectGroupContactCards_xpath=//span[text()='Group Contact Card']
+
+SC_Add_SelectAccordion_xpath=//span[text()='Accordion']/preceding-sibling::div
+SC_Add_SelectMvcForm_xpath=//span[text()='Mvc Form']/preceding-sibling::div
+SC_Add_SelectGatedContentForm_xpath=//span[text()='Gated Content Form']/preceding-sibling::div
+SC_Add_SelectExploreCards_xpath=//span[text()='Explore Cards']/preceding-sibling::div
+SC_Add_SelectHighlightLink_xpath=//span[text()='Highlight Link']/preceding-sibling::div
+SC_Add_SelectRelatedCards_xpath=//span[text()='Related Cards']/preceding-sibling::div
+SC_Add_SelectRelatedLinks_xpath=//span[text()='Related Links']/preceding-sibling::div
+SC_Add_SelectLargeImage_xpath=//span[text()='Large Image With Side Caption']/preceding-sibling::div
+SC_Add_SelectLargeVideo_xpath=//span[text()='Large Video with Side Caption']/preceding-sibling::div
+SC_Add_SelectBulletHighlights_xpath=//span[text()='Bullet Highlights']/preceding-sibling::div
+SC_Add_SelectCollectionCardsContainer_xpath=//span[text()='Collection Cards Container']/preceding-sibling::div
+SC_Add_SelectContentRichText_xpath=//span[text()='Content Rich Text']/preceding-sibling::div
+SC_Add_SelectFeaturedNews_xpath=//span[text()='Featured News and Campaigns']/preceding-sibling::div
+SC_Add_SelectHTML_xpath=//span[text()='HTML']
+SC_Add_SelectPageQuote_xpath=//span[text()='Page Quote']
+SC_Add_SelectSocialSharingButton_xpath=//span[text()='Social Sharing Buttons']
+SC_Add_SelectSubHeading_xpath=//span[text()='Sub Heading']
+SC_Add_SelectHighlight_xpath=//span[text()='Summary Highlight']
+SC_Add_SelectTeamListGrid_xpath=//span[text()='Team List Grid']
+SC_Add_SelectOverviewContainer_xpath=//span[text()='Overview Container']
+SC_Add_StockTicker_xpath=//span[text()='Stock Ticker']
+SC_Add_NewsInsightsGrid_xpath=//span[text()='News Insights Grid Container']
+SC_Add_Accolades_xpath=//span[text()='Accolades']
+SC_Add_CallToAction_xpath=//span[text()='Call To Action']
+SC_Add_SelectOverviewSimple_xpath=//span[text()='Overview Simple']
+SC_Add_RegionSelectorPage_xpath=//span[text()='Region Selector Page']
+
+# Summary Highlight
+SC_Highlight_Heading_xpath=//div[contains(@class,'summary-highlights-heading')]//span[contains(@class,'scWebEditInput')]
+SC_Highlight_List1_xpath=(//div[contains(@class,'summary-highlights-list')]//span[contains(@class,'scWebEditInput')])[1]
+SC_Highlight_List2_xpath=(//div[contains(@class,'summary-highlights-list')]//span[contains(@class,'scWebEditInput')])[2]
+SC_Highlight_List3_xpath=(//div[contains(@class,'summary-highlights-list')]//span[contains(@class,'scWebEditInput')])[3]
+SC_Highlight_List4_xpath=(//div[contains(@class,'summary-highlights-list')]//span[contains(@class,'scWebEditInput')])[4]
+
+# FAR Footer
+SC_Add_FooterSection_xpath=//footer
+SC_Add_InsertFooter_xpath=//div[@class='scInsertionHandle'][contains(@title,'Footer')]//span[text()='Add here']
+SC_Add_SelectFARFooter_xpath=//span[text()='Find-A-Rep Footer']
+
+# Article landing page
+SC_ArticlePage_Card_Section_xpath=//div[contains(@class,'ajg-news-card-outer')]
+SC_ArticlePage_NewsCard_Title_xpath=//h4[@id='ajg-article-news-cards']//span[contains(@id,'edit')]
+SC_ArticlePage_NewsCard_Content_xpath=//h4[@id='ajg-article-news-cards']/following-sibling::h5//span[contains(@id,'edit')]
+
+SC_ArticlePage_InsightCard_Title_xpath=//h4[@id='ajg-article-insights-cards']//span[contains(@id,'edit')]
+SC_ArticlePage_InsightCard_Content_xpath=//h4[@id='ajg-article-insights-cards']/following-sibling::h5//span[contains(@id,'edit')]
+
+# Sub heading
+SC_SubHeadingSec_lbl_xpath=//section[contains(@aria-label,'Sub-Heading')]
+SC_SubHeadHeader_txt_xpath=//section[contains(@class,'chromeWithDatasource')]//div[contains(@class,'ajg-sub-heading-header')]//span[2]
+SC_SubHeadContent_txt_xpath=//section[contains(@class,'chromeWithDatasource')]//div[contains(@class,'ajg-sub-heading-content')]//span[2]
+
+# Related Links
+SC_RLSection_lbl_xpath=//section[@aria-label='Related Links']
+SC_RLItem1Title_lnk_xpath=(//div[@class='ajg-related-link-item']/h5/span[2])[1]
+SC_RL1TreeViewExpand_lbl_xpath=//div[contains(text(),'Related Links 1')]/..//span[text()='ReplaceString']/../../img
+SC_RL1TreeViewName_lbl_xpath=//div[contains(text(),'Related Links 1')]/..//span[text()='ReplaceString']/../../a
+SC_RL1SelectTreeViewItem_lbl_xpath=//div[contains(text(),'Related Links 1')]/..//img[@class='scNavButton'][contains(@id,"right")]
+
+SC_ShowAncestors_Drpdwn_xpath=(//img[contains(@alt,"Show ancestors")])[2]
+SC_SelectAncestor_xpath=//img[@class="scChromeAncestorIcon"]/following-sibling::span[text()='ReplaceString']
+SC_EditItem_xpath=(//img[@alt="Edit item"])[2]
+
+
+
+######### Object for creating data source ###########
+
+#### Accordions ####
+SC_DS_Acc_Content_Heading_txt_xpath=//div[text()='Accordion Heading']/..//input
+SC_DS_Acc_Content_Editor_lnk_xpath=//div[text()='Accordion Content']/..//a[text()='Show editor']
+
+
+
+
